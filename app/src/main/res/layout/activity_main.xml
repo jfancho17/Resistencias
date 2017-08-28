@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context="incorporation.app.primera.mi.resistencias.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.43"
+                android:gravity="center"
+                android:text="El valor de la resistenia es:"
+                android:textColor="@color/crimson"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/respuesta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.43"
+                android:gravity="center"
+                android:textColor="@color/crimson"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/codigo" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/primera_linea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></Spinner>
+
+
+            <Spinner
+                android:id="@+id/segunda_linea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></Spinner>
+
+            <Spinner
+                android:id="@+id/tercera_linea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></Spinner>
+
+
+            <Spinner
+                android:id="@+id/cuarta_linea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="355dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/resistencia"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/mostrar_primera_linea"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="0.17" />
+
+            <TextView
+                android:id="@+id/mostar_segunda_linea"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="33dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="26dp"
+                android:layout_weight="0.02"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mostrar_tercera_linea"
+                android:layout_width="34dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="34dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/mostrar_cuarta_linea"
+                android:layout_width="27dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="0.19" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/calcular"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/maroon"
+                android:text="Calcular"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/limpiar"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@color/maroon"
+                android:onClick="limpiar"
+                android:text="Limpiar"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+</LinearLayout>

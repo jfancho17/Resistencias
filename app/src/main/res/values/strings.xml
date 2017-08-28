@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">¡¡Calculo Resistencias!!</string>
+
+
+    <string-array name="bandas">
+        <item>Negro</item>
+        <item>Café</item>
+        <item>Rojo</item>
+        <item>Naranja</item>
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Morado</item>
+        <item>gris</item>
+        <item>Blanco</item>
+    </string-array>
+
+    <string-array name="tolerancia">
+        <item>Café</item>
+        <item>Rojo</item>
+        <item>Dorado</item>
+        <item>Plateado</item>
+    </string-array>
+
+
+
+</resources>
